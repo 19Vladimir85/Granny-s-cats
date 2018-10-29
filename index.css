@@ -1,0 +1,184 @@
+@font-face
+{
+    font-family: 'garamondnormal';
+    src: url('./garamond.woff2') format('woff2'), url('./garamond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Comic Sans MS', arial;
+    src: url('./comic.ttf') format('truetype');
+}
+
+body
+{
+    margin: 0;
+}
+
+/* header */
+
+header
+{
+    height: 120px;
+}
+
+.logo-img
+{
+    width: 100px;
+    height: 100px;
+}
+
+header article p
+{
+    font-family: 'Comic Sans MS', arial;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+header ul li
+{
+    font-family: 'Comic Sans MS', arial;
+    font-size: 20px;
+    color: #808080;
+    padding-left: 10px;
+}
+
+header ul li:hover
+{
+    color: #000;
+    cursor: pointer;
+}
+
+header ul li,
+header div,
+header ul,
+header article
+{
+    display: inline-block;
+}
+
+/* button */
+
+input[id='icon-checkbox']
+{
+    display: none;
+}
+
+input[id='icon-checkbox'] + label
+{
+    width: 60px;
+    height: 60px;
+    content: url('./img/Hamburger.png');
+}
+
+input[id='icon-checkbox']:hover + label
+{
+    cursor: pointer;
+}
+
+input[id='icon-checkbox']:checked + label
+{
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+input[id='icon-checkbox']:checked ~ section article.cat-card,
+input[id='icon-checkbox']:checked ~ section p.full-information
+{
+    display: block;
+}
+
+input[id='icon-checkbox']:checked ~ section
+{
+    padding-left: 30%;
+}
+
+input[id='icon-checkbox']:checked ~ section article
+{
+    width: 600px;
+}
+
+input[id='icon-checkbox']:checked ~ section article div.cat-img-wrapper
+{
+    height: 400px;
+}
+
+/* cat cards */
+
+.cat-information
+{
+    padding-left: 40px;
+}
+
+.cat-card
+{
+    background-color: #fff;
+    width: 370px;
+    display: inline-block;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    margin: 0 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cat-card:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.cat-img-wrapper
+{
+    height: 220px;
+    overflow: hidden;
+}
+
+.cat-img
+{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    width: 100%;
+}
+
+.cat-img:hover
+{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.short-information h2
+{
+    padding-left: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.short-information h2 a
+{
+    color: #808080;
+    font-family: 'Comic Sans MS', arial;
+    text-decoration: none;
+}
+
+.short-information h2 a:hover
+{
+    color: #000;
+}
+
+.short-information p
+{
+    margin: 0;
+    padding: 5px;
+}
+
+.full-information
+{
+    display: none;
+    padding: 5px;
+}
