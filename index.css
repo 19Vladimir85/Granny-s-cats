@@ -19,25 +19,20 @@ body
 
 /* header */
 
-header
-{
-    height: 120px;
-}
-
 .logo-img
 {
     width: 100px;
     height: 100px;
 }
 
-header article p
+.title
 {
     font-family: 'Comic Sans MS', arial;
     font-size: 40px;
     padding-left: 30px;
 }
 
-header ul li
+.menu-position
 {
     font-family: 'Comic Sans MS', arial;
     font-size: 20px;
@@ -45,16 +40,16 @@ header ul li
     padding-left: 10px;
 }
 
-header ul li:hover
+.menu-position:hover
 {
     color: #000;
     cursor: pointer;
 }
 
-header ul li,
-header div,
-header ul,
-header article
+.menu-position,
+.logo,
+.menu,
+.title
 {
     display: inline-block;
 }
@@ -151,7 +146,7 @@ input[id='icon-checkbox']:checked ~ section article div.cat-img-wrapper
     -o-transform: scale(1.2);
 }
 
-.short-information h2
+.name
 {
     padding-left: 10px;
     white-space: nowrap;
@@ -159,14 +154,14 @@ input[id='icon-checkbox']:checked ~ section article div.cat-img-wrapper
     overflow: hidden;
 }
 
-.short-information h2 a
+.cat-name
 {
     color: #808080;
     font-family: 'Comic Sans MS', arial;
     text-decoration: none;
 }
 
-.short-information h2 a:hover
+.cat-name:hover
 {
     color: #000;
 }
