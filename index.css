@@ -80,23 +80,23 @@ input[id='icon-checkbox']:checked + label
     transform: rotateZ(90deg);
 }
 
-input[id='icon-checkbox']:checked ~ section article.cat-card,
-input[id='icon-checkbox']:checked ~ section p.full-information
+input[id='icon-checkbox']:checked ~ .cat-card,
+input[id='icon-checkbox']:checked ~ .cat-information .full-information
 {
     display: block;
 }
 
-input[id='icon-checkbox']:checked ~ section
+input[id='icon-checkbox']:checked ~ .cat-information
 {
     padding-left: 30%;
 }
 
-input[id='icon-checkbox']:checked ~ section article
+input[id='icon-checkbox']:checked ~ .cat-information .cat-card
 {
     width: 600px;
 }
 
-input[id='icon-checkbox']:checked ~ section article div.cat-img-wrapper
+input[id='icon-checkbox']:checked ~ .cat-information .cat-card .cat-img-wrapper
 {
     height: 400px;
 }
